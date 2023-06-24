@@ -1,0 +1,33 @@
+plugins {
+    id 'application'
+}
+
+group 'com.codemos'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+mainClassName = 'com.codemos.bot.Main'
+
+dependencies {
+    implementation 'net.dv8tion:JDA:5.0.0-beta.10'
+    implementation 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'ch.qos.logback:logback-classic:1.4.7'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.2.2'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.9.1'
+    compileOnly 'commons-io:commons-io:2.12.0'
+    implementation 'ch.qos.logback:logback-classic:0.9.26'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation "io.github.bonigarcia:webdrivermanager:5.3.3"
+    implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}
